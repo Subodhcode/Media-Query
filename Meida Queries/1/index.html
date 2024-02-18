@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Screen</title>
+    <style>
+        header{
+            background-color: #eb9c9c;
+            padding: 20px;
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(15, 135, 247);
+            height: 50px;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            background-color: rgb(45, 184, 253);
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:600px) {
+            header{
+                background-color: blue;
+            }
+            main{
+                background-color: greenyellow;
+            }
+            footer{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Header</h1>
+    </header>
+    <main>
+        <p>Main Content</p>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

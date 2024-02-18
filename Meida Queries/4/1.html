@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr ;
+            gap: 20px;
+            padding: 20px;
+            background-color:#f5f5f5;
+            min-height: 100vh;
+        }
+
+        .item{
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header{
+            background-color: red;
+            color: white;
+        }
+
+        .sidebar{
+            background-color: rgb(9, 232, 39);
+            color: white;
+        }
+
+        .main{
+            background-color: rgb(218, 32, 178);
+            color: white;
+        }
+
+        .footer{
+            background-color: rgb(89, 205, 220);
+            color: white;
+        }
+
+        @media(min-width:768px){
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Box1</div>
+        <div class="item sidebar">Box2</div>
+        <div class="item main">Box3</div>
+        <div class="item footer">BOx4</div>
+    </div>
+</body>
+</html>
